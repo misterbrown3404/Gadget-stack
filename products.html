@@ -1,0 +1,408 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-variant":"#d3e4fe","on-primary-fixed-variant":"#003ea8","tertiary-fixed":"#ffdbcd","on-tertiary-container":"#ffede6","surface-dim":"#cbdbf5","secondary-fixed":"#89f5e7","on-secondary":"#ffffff","on-surface-variant":"#434655","background":"#f8f9ff","on-primary-fixed":"#00174b","error-container":"#ffdad6","surface":"#f8f9ff","primary-fixed":"#dbe1ff","primary-fixed-dim":"#b4c5ff","on-tertiary-fixed-variant":"#7d2d00","on-secondary-container":"#006f66","surface-tint":"#0053db","inverse-on-surface":"#eaf1ff","outline-variant":"#c3c6d7","on-tertiary-fixed":"#360f00","tertiary-container":"#bc4800","on-tertiary":"#ffffff","inverse-primary":"#b4c5ff","on-error-container":"#93000a","outline":"#737686","secondary-container":"#86f2e4","primary":"#004ac6","on-secondary-fixed":"#00201d","on-background":"#0b1c30","error":"#ba1a1a","on-error":"#ffffff","primary-container":"#2563eb","surface-container":"#e5eeff","on-primary-container":"#eeefff","secondary-fixed-dim":"#6bd8cb","on-secondary-fixed-variant":"#005049","on-primary":"#ffffff","surface-container-high":"#dce9ff","surface-container-low":"#eff4ff","tertiary":"#943700","tertiary-fixed-dim":"#ffb596","secondary":"#006a61","surface-bright":"#f8f9ff","surface-container-highest":"#d3e4fe","surface-container-lowest":"#ffffff","on-surface":"#0b1c30","inverse-surface":"#213145"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-md":"1rem","margin-tablet":"1.5rem","space-xl":"2rem","gutter-desktop":"1.5rem","space-xs":"0.25rem",gutter:"1rem","space-lg":"1.5rem","margin-desktop":"2.5rem",margin:"1rem","space-sm":"0.5rem","space-2xl":"3rem"},fontFamily:{"body-lg":["Inter"],"label-lg":["Inter"],display:["Inter"],"headline-sm":["Inter"],"headline-md":["Inter"],"label-md":["Inter"],"headline-lg":["Inter"],"counter-xl":["Inter"],"body-md":["Inter"],"headline-lg-mobile":["Inter"],"body-sm":["Inter"]},fontSize:{"body-lg":["16px",{lineHeight:"24px",letterSpacing:"-0.005em",fontWeight:"500"}],"label-lg":["14px",{lineHeight:"18px",letterSpacing:"0.01em",fontWeight:"600"}],display:["36px",{lineHeight:"44px",letterSpacing:"-0.025em",fontWeight:"800"}],"headline-sm":["18px",{lineHeight:"24px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-md":["22px",{lineHeight:"28px",letterSpacing:"-0.015em",fontWeight:"700"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.03em",fontWeight:"700"}],"headline-lg":["30px",{lineHeight:"38px",letterSpacing:"-0.02em",fontWeight:"700"}],"counter-xl":["28px",{lineHeight:"32px",letterSpacing:"-0.02em",fontWeight:"800"}],"body-md":["14px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"400"}],"headline-lg-mobile":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"700"}],"body-sm":["12px",{lineHeight:"16px",letterSpacing:"0.01em",fontWeight:"500"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface" style="font-family: Poppins, sans-serif;"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between p-space-lg"><div class="flex flex-col gap-6"><div class="flex items-center gap-3 px-1"><div class="w-9 h-9 rounded-xl bg-[#BC4800] flex items-center justify-center text-white flex-shrink-0 shadow-sm"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="m7.5 4.27 9 5.15"></path><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path><path d="m3.3 7 8.7 5 8.7-5"></path><path d="M12 22V12"></path></svg></div><div class="flex flex-col"><span class="font-bold text-lg text-slate-900 tracking-tight leading-none">GadgetStash</span><span class="text-[11px] font-medium text-slate-400 mt-1 uppercase tracking-wider">Inventory Hub</span></div></div><nav class="flex flex-col gap-1.5 mt-2"><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:bg-slate-100 hover:text-slate-900 transition-colors" href="dashboard.html"><svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><rect height="9" rx="1" width="7" x="3" y="3"></rect><rect height="5" rx="1" width="7" x="14" y="3"></rect><rect height="9" rx="1" width="7" x="14" y="12"></rect><rect height="5" rx="1" width="7" x="3" y="16"></rect></svg><span class="">Dashboard</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-sm font-semibold text-white bg-[#BC4800] shadow-sm transition-colors" href="products.html"><svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="m16.5 9.4-9-5.19M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.29 7 12 12 20.71 7"></polyline><line x1="12" x2="12" y1="22" y2="12"></line></svg><span class="">Products</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:bg-slate-100 hover:text-slate-900 transition-colors" href="categories.html"><svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"></path><path d="M2 10h20"></path></svg><span class="">Categories</span></a></nav></div><div class="pt-4 border-t border-slate-100"><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:bg-red-50 hover:text-red-600 transition-colors" href="login.html"><svg class="w-4 h-4 text-slate-400 group-hover:text-red-600" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" x2="9" y1="12" y2="12"></line></svg><span class="">Sign Out</span></a></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-space-xl flex items-center justify-between"><div class="flex items-center gap-3 flex-1 max-w-md"><div class="relative w-full"><svg class="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><line x1="21" x2="16.65" y1="21" y2="16.65"></line></svg><input class="w-full pl-10 pr-4 py-2 h-10 rounded-xl bg-slate-50 border border-slate-200 text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none focus:border-[#BC4800] focus:bg-white transition-all" placeholder="Search gadgets, cables, batteries..." type="text"></div></div><div class="flex items-center gap-4"><button aria-label="Notifications" class="w-10 h-10 rounded-xl border border-slate-200 flex items-center justify-center text-slate-600 hover:bg-slate-50 transition-colors relative"><svg class="w-4 h-4 text-slate-600" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"></path><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path></svg><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-[#BC4800]"></span></button><div class="flex items-center gap-3 pl-2 border-l border-slate-200"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-slate-200" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaFazkRzc5QA-kTz3ZIK7-BC93FzyrKr0ovMsEJGbddlu0dWPbidi7JzZ-7r1fZJch6GDkhoTHZXYiVE8YdpbEt_mZkVkmPUlgPUYPwoTQGfso3wkcHmkrX5VWe5yCGpcFQ5Rfiya7JpijIKIoaceCyjGtK2-6m5TywYMsJeprE_vKSOPypKRyMhlNYcCF7urqrXylcngZwRhuOFWQbWfRRalAtkkjpLUQP8vgM5zv"><div class="flex flex-col"><span class="text-xs font-semibold text-slate-900 leading-none">Alex Stash</span><span class="text-[11px] font-medium text-[#BC4800] leading-none mt-1">Tech Scout</span></div></div></div></header><main class="w-full pt-16 px-space-xl py-space-lg bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Action & Overview Strip -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md mb-space-xl"><div><div class="flex items-center gap-2 mb-1"><span class="inline-flex items-center justify-center w-6 h-6 rounded-md bg-[#BC4800]/10 text-[#BC4800]"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><rect height="14" rx="2" width="20" x="2" y="3"></rect><line x1="8" x2="16" y1="21" y2="21"></line><line x1="12" x2="12" y1="17" y2="21"></line></svg></span><span class="text-xs font-semibold uppercase tracking-wider text-[#BC4800]">Inventory Catalog</span></div><div class="flex items-baseline gap-3"><h1 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">Gadget Products</h1><span class="px-2.5 py-0.5 rounded-full bg-slate-100 border border-slate-200 text-xs font-semibold text-slate-700">34 Cataloged</span></div></div><div class="flex items-center gap-3"><button class="h-11 px-5 rounded-xl bg-[#BC4800] hover:bg-[#943700] text-white text-sm font-semibold flex items-center gap-2 shadow-sm transition-all" id="add-gadget-btn"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="12" x2="12" y1="8" y2="16"></line><line x1="8" x2="16" y1="12" y2="12"></line></svg><span class="">Add New Gadget</span></button></div></div>
+<!-- Quick Stats Summary Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md mb-space-xl"><div class="p-5 rounded-xl bg-white border border-slate-200 shadow-sm flex items-center justify-between"><div class="flex flex-col"><p class="text-xs font-medium text-slate-500 uppercase tracking-wide">Total Devices</p><p class="text-2xl font-bold text-slate-900 mt-1">128</p></div><div class="w-11 h-11 rounded-xl bg-slate-100 flex items-center justify-center text-slate-700"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="m7.5 4.27 9 5.15"></path><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path><path d="m3.3 7 8.7 5 8.7-5"></path><path d="M12 22V12"></path></svg></div></div><div class="p-5 rounded-xl bg-white border border-slate-200 shadow-sm flex items-center justify-between"><div class="flex flex-col"><p class="text-xs font-medium text-slate-500 uppercase tracking-wide">In Stock Items</p><div class="flex items-baseline gap-2 mt-1"><p class="text-2xl font-bold text-slate-900">30</p><span class="text-xs font-medium text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full">Ready</span></div></div><div class="w-11 h-11 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-600"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></div></div><div class="p-5 rounded-xl bg-white border border-slate-200 shadow-sm flex items-center justify-between"><div class="flex flex-col"><p class="text-xs font-medium text-slate-500 uppercase tracking-wide">Low Stock Warning</p><div class="flex items-baseline gap-2 mt-1"><p class="text-2xl font-bold text-[#BC4800]">4</p><span class="text-xs font-medium text-[#BC4800] bg-orange-50 px-2 py-0.5 rounded-full">Needs restock</span></div></div><div class="w-11 h-11 rounded-xl bg-orange-50 flex items-center justify-center text-[#BC4800]"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"></path><line x1="12" x2="12" y1="9" y2="13"></line><line x1="12" x2="12.01" y1="17" y2="17"></line></svg></div></div><div class="p-5 rounded-xl bg-white border border-slate-200 shadow-sm flex items-center justify-between"><div class="flex flex-col"><p class="text-xs font-medium text-slate-500 uppercase tracking-wide">Total Value</p><p class="text-2xl font-bold text-slate-900 mt-1">$48,220</p></div><div class="w-11 h-11 rounded-xl bg-slate-100 flex items-center justify-center text-slate-700"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><line x1="12" x2="12" y1="2" y2="22"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg></div></div></div>
+<!-- Filter & Search Toolbar -->
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm mb-space-lg flex flex-col lg:flex-row lg:items-center justify-between gap-space-md"><div class="relative flex-1 min-w-[280px]"><svg class="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><line x1="21" x2="16.65" y1="21" y2="16.65"></line></svg><input class="w-full h-11 pl-10 pr-4 rounded-xl bg-slate-50 border border-slate-200 text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none focus:border-[#BC4800] focus:bg-white transition-all" id="searchInput" placeholder="Search by name, model, or SKU..." type="text"></div><div class="flex flex-wrap items-center gap-3"><div class="flex items-center gap-2 px-3 py-2 rounded-xl bg-slate-50 border border-slate-200"><svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"></path></svg><label class="text-xs font-semibold text-slate-500 uppercase tracking-wide" for="categoryFilter">Category:</label><select class="bg-transparent text-xs font-semibold text-slate-800 focus:outline-none cursor-pointer pr-1" id="categoryFilter"><option value="all">All Categories</option><option value="Smartphones">Smartphones</option><option value="Gaming Gear">Gaming Gear</option><option value="Audio &amp; Wearables">Audio &amp; Wearables</option><option value="Drones &amp; Cameras">Drones &amp; Cameras</option></select></div><div class="flex items-center gap-2 px-3 py-2 rounded-xl bg-slate-50 border border-slate-200"><svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path><path d="m3.3 7 8.7 5 8.7-5"></path><path d="M12 22V12"></path></svg><label class="text-xs font-semibold text-slate-500 uppercase tracking-wide" for="stockFilter">Stock:</label><select class="bg-transparent text-xs font-semibold text-slate-800 focus:outline-none cursor-pointer pr-1" id="stockFilter"><option value="all">All Levels</option><option value="in-stock">In Stock</option><option value="low-stock">Low Stock (≤ 5)</option></select></div><div class="flex items-center p-1 rounded-xl bg-slate-100 border border-slate-200 ml-auto sm:ml-0"><button aria-label="Grid View" class="px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5 text-slate-600 hover:text-slate-900 transition-all" id="viewGridBtn"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><rect height="7" width="7" x="3" y="3"></rect><rect height="7" width="7" x="14" y="3"></rect><rect height="7" width="7" x="14" y="14"></rect><rect height="7" width="7" x="3" y="14"></rect></svg><span class="hidden sm:inline">Cards</span></button><button aria-label="Table View" class="px-3 py-1.5 rounded-lg bg-white text-xs font-semibold flex items-center gap-1.5 text-[#BC4800] shadow-sm transition-all" id="viewTableBtn"><svg class="w-3.5 h-3.5 text-[#BC4800]" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M3 3h18v18H3z"></path><path d="M3 9h18"></path><path d="M3 15h18"></path><path d="M9 3v18"></path></svg><span class="hidden sm:inline">Table</span></button></div></div></div>
+<!-- TABLE VIEW CONTAINER -->
+<div class="w-full bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden mb-6" id="tableView">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-slate-50 border-b border-slate-200 text-xs font-semibold text-slate-500 uppercase tracking-wider">
+<th class="py-space-md px-space-lg">Gadget Name &amp; SKU</th>
+<th class="py-space-md px-space-md">Category</th>
+<th class="py-space-md px-space-md">Retail Price</th>
+<th class="py-space-md px-space-md">Current Stock</th>
+<th class="py-space-md px-space-md">Status</th>
+<th class="py-space-md px-space-lg text-right">Quick Inventory Controls</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md text-on-surface" id="tableBody"><tr class="product-row hover:bg-slate-50/80 transition-colors border-b border-slate-100" data-category="Smartphones" data-name="Apple iPhone 15 Pro Max" data-sku="GAD-101" data-stock-level="in-stock"><td class="py-4 px-6"><div class="flex items-center gap-3"><img class="w-11 h-11 rounded-lg object-cover border border-slate-100 bg-slate-50 flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCh4EVRYjzC4T6qGsNpv1fNeEtCAppEMX6LIILtLTUIBfsYmZogvzbLK_xnT22-G3N2xNWj1nkPRFLRxd7YQETnyv9CftnacwCtdSEZoL8Ela80i37vCqT3CkFQCnoi-DoAclCcdnJHFA5_Ums-lcFtKWdhJLtpHWgbdihBKw-IWMAOVipFn3WaH7I0vfjFLTp3dv20YTeDzHLkzp7lnoZlWutds-gUqumiyziMnCUW"><div class="min-w-0"><p class="text-sm font-semibold text-slate-900 truncate">Apple iPhone 15 Pro Max</p><p class="text-xs text-slate-400 mt-0.5">SKU: <span class="text-slate-600 font-medium">GAD-101</span> • 256GB Titanium</p></div></div></td><td class="py-4 px-4"><span class="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-700 bg-slate-100 px-2.5 py-1 rounded-md"><svg class="w-3.5 h-3.5 text-slate-500" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><rect height="18" rx="2" width="12" x="6" y="3"></rect><line x1="11" x2="13" y1="18" y2="18"></line></svg> Smartphones</span></td><td class="py-4 px-4"><span class="text-sm font-bold text-slate-900">$1,199</span></td><td class="py-4 px-4"><span class="stock-display text-base font-bold text-slate-900" data-count="42">42</span><span class="text-slate-400 text-xs ml-1">units</span></td><td class="py-4 px-4"><span class="status-badge inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-semibold"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> In Stock</span></td><td class="py-4 px-6 text-right"><div class="flex items-center justify-end gap-1.5"><button class="remove-btn w-8 h-8 rounded-lg border border-slate-200 hover:bg-red-50 hover:text-red-600 hover:border-red-200 text-slate-600 flex items-center justify-center transition-colors active:scale-95" title="Remove 1 unit"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><line x1="5" x2="19" y1="12" y2="12"></line></svg></button><button class="restock-btn h-8 px-2.5 rounded-lg border border-slate-200 hover:bg-orange-50 hover:text-[#BC4800] hover:border-orange-200 text-slate-700 text-xs font-semibold flex items-center gap-1 transition-colors active:scale-95"><svg class="w-3.5 h-3.5 text-[#BC4800]" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><line x1="12" x2="12" y1="5" y2="19"></line><line x1="5" x2="19" y1="12" y2="12"></line></svg><span class="">Restock</span></button><button class="edit-btn w-8 h-8 rounded-lg border border-slate-200 hover:bg-slate-100 text-slate-600 flex items-center justify-center transition-colors active:scale-95" title="Edit Gadget"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"></path></svg></button></div></td></tr><tr class="product-row hover:bg-slate-50/80 transition-colors border-b border-slate-100" data-category="Gaming Gear" data-name="PlayStation 5 Digital Edition" data-sku="GAD-102" data-stock-level="low-stock"><td class="py-4 px-6"><div class="flex items-center gap-3"><img class="w-11 h-11 rounded-lg object-cover border border-slate-100 bg-slate-50 flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD54b2Sl2HbN_tUtve1jO6XX4KztQQat-frki2MLKFm2qAjhWt6dFRFLuk5SbrrSSUhg5V40gkya6EcitAWm3kQQVQN3YJ8XOyWTGLbQ8ZhkGJGKE3QPs2owRDEoQg4lAmzJ3loiX1wP01wG_auH0FhTxz8dvg0xOLcvGEeSkrCy_BCPzVEoogNrzGUPbgtTA1j2syjHCi_cSkG7kpAnZ3mq8Bl95h6NlxoCPxmsZFU"><div class="min-w-0"><p class="text-sm font-semibold text-slate-900 truncate">PlayStation 5 Digital Edition</p><p class="text-xs text-slate-400 mt-0.5">SKU: <span class="text-slate-600 font-medium">GAD-102</span> • 1TB SSD Console</p></div></div></td><td class="py-4 px-4"><span class="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-700 bg-slate-100 px-2.5 py-1 rounded-md"><svg class="w-3.5 h-3.5 text-slate-500" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><line x1="6" x2="10" y1="12" y2="12"></line><line x1="8" x2="8" y1="10" y2="14"></line><line x1="15" x2="15.01" y1="13" y2="13"></line><line x1="18" x2="18.01" y1="11" y2="11"></line><rect height="12" rx="2" width="20" x="2" y="6"></rect></svg> Gaming Gear</span></td><td class="py-4 px-4"><span class="text-sm font-bold text-slate-900">$449</span></td><td class="py-4 px-4"><span class="stock-display text-base font-bold text-[#BC4800]" data-count="3">3</span><span class="text-slate-400 text-xs ml-1">units</span></td><td class="py-4 px-4"><span class="status-badge inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-orange-50 text-[#BC4800] text-xs font-semibold"><span class="w-1.5 h-1.5 rounded-full bg-[#BC4800]"></span> Low Stock</span></td><td class="py-4 px-6 text-right"><div class="flex items-center justify-end gap-1.5"><button class="remove-btn w-8 h-8 rounded-lg border border-slate-200 hover:bg-red-50 hover:text-red-600 hover:border-red-200 text-slate-600 flex items-center justify-center transition-colors active:scale-95" title="Remove 1 unit"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><line x1="5" x2="19" y1="12" y2="12"></line></svg></button><button class="restock-btn h-8 px-2.5 rounded-lg border border-slate-200 hover:bg-orange-50 hover:text-[#BC4800] hover:border-orange-200 text-slate-700 text-xs font-semibold flex items-center gap-1 transition-colors active:scale-95"><svg class="w-3.5 h-3.5 text-[#BC4800]" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><line x1="12" x2="12" y1="5" y2="19"></line><line x1="5" x2="19" y1="12" y2="12"></line></svg><span class="">Restock</span></button><button class="edit-btn w-8 h-8 rounded-lg border border-slate-200 hover:bg-slate-100 text-slate-600 flex items-center justify-center transition-colors active:scale-95" title="Edit Gadget"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"></path></svg></button></div></td></tr><tr class="product-row hover:bg-slate-50/80 transition-colors border-b border-slate-100" data-category="Drones &amp; Cameras" data-name="DJI Mini 4 Pro Drone" data-sku="GAD-103" data-stock-level="in-stock"><td class="py-4 px-6"><div class="flex items-center gap-3"><img class="w-11 h-11 rounded-lg object-cover border border-slate-100 bg-slate-50 flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA19l-t99POTeQRy22GN9vMRBytrmsNtRR_LFbNZTy10YGdirWIH70BXZmWstp-uPB10jYY1zxjoh2wGcAozTz-pc7Aitru_Cc8o9u9mH7Yaj-MH4o_ABKuXSpFQyXUeGLrJwWnIqBSr4h5XHD4_MzqphWaqABhlh6777fL127cgfjDDBa-G4ir7CkFOiMrlZV9gzU1g6gwt3ybbidnn_pvtogRpvup0adChnLVXUpn"><div class="min-w-0"><p class="text-sm font-semibold text-slate-900 truncate">DJI Mini 4 Pro Drone</p><p class="text-xs text-slate-400 mt-0.5">SKU: <span class="text-slate-600 font-medium">GAD-103</span> • RC 2 Controller Pack</p></div></div></td><td class="py-4 px-4"><span class="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-700 bg-slate-100 px-2.5 py-1 rounded-md"><svg class="w-3.5 h-3.5 text-slate-500" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg> Drones &amp; Cameras</span></td><td class="py-4 px-4"><span class="text-sm font-bold text-slate-900">$759</span></td><td class="py-4 px-4"><span class="stock-display text-base font-bold text-slate-900" data-count="14">14</span><span class="text-slate-400 text-xs ml-1">units</span></td><td class="py-4 px-4"><span class="status-badge inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-semibold"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> In Stock</span></td><td class="py-4 px-6 text-right"><div class="flex items-center justify-end gap-1.5"><button class="remove-btn w-8 h-8 rounded-lg border border-slate-200 hover:bg-red-50 hover:text-red-600 hover:border-red-200 text-slate-600 flex items-center justify-center transition-colors active:scale-95" title="Remove 1 unit"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><line x1="5" x2="19" y1="12" y2="12"></line></svg></button><button class="restock-btn h-8 px-2.5 rounded-lg border border-slate-200 hover:bg-orange-50 hover:text-[#BC4800] hover:border-orange-200 text-slate-700 text-xs font-semibold flex items-center gap-1 transition-colors active:scale-95"><svg class="w-3.5 h-3.5 text-[#BC4800]" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><line x1="12" x2="12" y1="5" y2="19"></line><line x1="5" x2="19" y1="12" y2="12"></line></svg><span class="">Restock</span></button><button class="edit-btn w-8 h-8 rounded-lg border border-slate-200 hover:bg-slate-100 text-slate-600 flex items-center justify-center transition-colors active:scale-95" title="Edit Gadget"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"></path></svg></button></div></td></tr><tr class="product-row hover:bg-slate-50/80 transition-colors border-b border-slate-100" data-category="Audio &amp; Wearables" data-name="Bose QuietComfort Ultra" data-sku="GAD-104" data-stock-level="in-stock"><td class="py-4 px-6"><div class="flex items-center gap-3"><img class="w-11 h-11 rounded-lg object-cover border border-slate-100 bg-slate-50 flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXxhw9QumgRhzInJFFy9Km3-IyoUiCZkZox05NEYeEiJAZfva6OkLogisq1GszTZ1JI6CYVXipdoLOGceSD90idYGR2hWYF6urcdUOtpGBgXWOtOM3RzbtIUiphMa8iIx_TPKWYrf7EeoltaWEjjkVV-k4-jTymggDxBr0VYTtHn7BmBw0e1CEu1OzqlzqmF3qwJOgF5hH4qkEqjOE0zWDFMrOF09dp9OT_HdBB9ar"><div class="min-w-0"><p class="text-sm font-semibold text-slate-900 truncate">Bose QuietComfort Ultra</p><p class="text-xs text-slate-400 mt-0.5">SKU: <span class="text-slate-600 font-medium">GAD-104</span> • Spatial Audio Over-Ear</p></div></div></td><td class="py-4 px-4"><span class="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-700 bg-slate-100 px-2.5 py-1 rounded-md"><svg class="w-3.5 h-3.5 text-slate-500" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"></path></svg> Audio &amp; Wearables</span></td><td class="py-4 px-4"><span class="text-sm font-bold text-slate-900">$379</span></td><td class="py-4 px-4"><span class="stock-display text-base font-bold text-slate-900" data-count="28">28</span><span class="text-slate-400 text-xs ml-1">units</span></td><td class="py-4 px-4"><span class="status-badge inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-semibold"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> In Stock</span></td><td class="py-4 px-6 text-right"><div class="flex items-center justify-end gap-1.5"><button class="remove-btn w-8 h-8 rounded-lg border border-slate-200 hover:bg-red-50 hover:text-red-600 hover:border-red-200 text-slate-600 flex items-center justify-center transition-colors active:scale-95" title="Remove 1 unit"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><line x1="5" x2="19" y1="12" y2="12"></line></svg></button><button class="restock-btn h-8 px-2.5 rounded-lg border border-slate-200 hover:bg-orange-50 hover:text-[#BC4800] hover:border-orange-200 text-slate-700 text-xs font-semibold flex items-center gap-1 transition-colors active:scale-95"><svg class="w-3.5 h-3.5 text-[#BC4800]" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><line x1="12" x2="12" y1="5" y2="19"></line><line x1="5" x2="19" y1="12" y2="12"></line></svg><span class="">Restock</span></button><button class="edit-btn w-8 h-8 rounded-lg border border-slate-200 hover:bg-slate-100 text-slate-600 flex items-center justify-center transition-colors active:scale-95" title="Edit Gadget"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"></path></svg></button></div></td></tr><tr class="product-row hover:bg-slate-50/80 transition-colors border-b border-slate-100" data-category="Gaming Gear" data-name="Nintendo Switch OLED" data-sku="GAD-105" data-stock-level="in-stock"><td class="py-4 px-6"><div class="flex items-center gap-3"><img class="w-11 h-11 rounded-lg object-cover border border-slate-100 bg-slate-50 flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZG1rjK3mv9MG5Ag23Ka6IXXXPy08hRgI9CQ8u0FGylIwqSrbvlUeYmb6OcWq5Im5yfHeEQNHSIliqrXQrDrgA-u9eAGs8oXTFuts0uIdnoTCiLwFGO7rcMvOBO8mmOD2AJmqLp4KiwjWXDoF2TTXZVCF8klNUSKFpppArjX71hsZuI0HgsA4MRg6wR0eq0fAWNN_--JNNHGdaymQU71GhQPxA9deq4hGJJU1dEgZF"><div class="min-w-0"><p class="text-sm font-semibold text-slate-900 truncate">Nintendo Switch OLED</p><p class="text-xs text-slate-400 mt-0.5">SKU: <span class="text-slate-600 font-medium">GAD-105</span> • 64GB White Console</p></div></div></td><td class="py-4 px-4"><span class="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-700 bg-slate-100 px-2.5 py-1 rounded-md"><svg class="w-3.5 h-3.5 text-slate-500" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><line x1="6" x2="10" y1="12" y2="12"></line><line x1="8" x2="8" y1="10" y2="14"></line><line x1="15" x2="15.01" y1="13" y2="13"></line><line x1="18" x2="18.01" y1="11" y2="11"></line><rect height="12" rx="2" width="20" x="2" y="6"></rect></svg> Gaming Gear</span></td><td class="py-4 px-4"><span class="text-sm font-bold text-slate-900">$349</span></td><td class="py-4 px-4"><span class="stock-display text-base font-bold text-slate-900" data-count="18">18</span><span class="text-slate-400 text-xs ml-1">units</span></td><td class="py-4 px-4"><span class="status-badge inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-semibold"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> In Stock</span></td><td class="py-4 px-6 text-right"><div class="flex items-center justify-end gap-1.5"><button class="remove-btn w-8 h-8 rounded-lg border border-slate-200 hover:bg-red-50 hover:text-red-600 hover:border-red-200 text-slate-600 flex items-center justify-center transition-colors active:scale-95" title="Remove 1 unit"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><line x1="5" x2="19" y1="12" y2="12"></line></svg></button><button class="restock-btn h-8 px-2.5 rounded-lg border border-slate-200 hover:bg-orange-50 hover:text-[#BC4800] hover:border-orange-200 text-slate-700 text-xs font-semibold flex items-center gap-1 transition-colors active:scale-95"><svg class="w-3.5 h-3.5 text-[#BC4800]" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><line x1="12" x2="12" y1="5" y2="19"></line><line x1="5" x2="19" y1="12" y2="12"></line></svg><span class="">Restock</span></button><button class="edit-btn w-8 h-8 rounded-lg border border-slate-200 hover:bg-slate-100 text-slate-600 flex items-center justify-center transition-colors active:scale-95" title="Edit Gadget"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"></path></svg></button></div></td></tr><tr class="product-row hover:bg-slate-50/80 transition-colors border-b border-slate-100" data-category="Gaming Gear" data-name="Steam Deck OLED 512GB" data-sku="GAD-106" data-stock-level="low-stock"><td class="py-4 px-6"><div class="flex items-center gap-3"><img class="w-11 h-11 rounded-lg object-cover border border-slate-100 bg-slate-50 flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjvaiZqWfiJnaRJ5z5CcCr_9w9380wRopG9S7ERwC6fEEixepl_URDMxMSWa6WenGdiPVoztWROlRsg22Y2VDuqiAv3Yd_LfNJgua02XUpwhFHfE2FbJQDoNfH4ZUCjmHYSgCF0jKv4oXQSjW6aMA8WsJQuUJHaqKEF5hfyVqOqkX0tVpz7If9NlH2Cuc-T1Jzrzvkh7Olve44pB-TvUI7cBdvgnXTr1IdE1Q8R4hl"><div class="min-w-0"><p class="text-sm font-semibold text-slate-900 truncate">Steam Deck OLED 512GB</p><p class="text-xs text-slate-400 mt-0.5">SKU: <span class="text-slate-600 font-medium">GAD-106</span> • Handheld PC 90Hz</p></div></div></td><td class="py-4 px-4"><span class="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-700 bg-slate-100 px-2.5 py-1 rounded-md"><svg class="w-3.5 h-3.5 text-slate-500" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><line x1="6" x2="10" y1="12" y2="12"></line><line x1="8" x2="8" y1="10" y2="14"></line><line x1="15" x2="15.01" y1="13" y2="13"></line><line x1="18" x2="18.01" y1="11" y2="11"></line><rect height="12" rx="2" width="20" x="2" y="6"></rect></svg> Gaming Gear</span></td><td class="py-4 px-4"><span class="text-sm font-bold text-slate-900">$549</span></td><td class="py-4 px-4"><span class="stock-display text-base font-bold text-[#BC4800]" data-count="2">2</span><span class="text-slate-400 text-xs ml-1">units</span></td><td class="py-4 px-4"><span class="status-badge inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-orange-50 text-[#BC4800] text-xs font-semibold"><span class="w-1.5 h-1.5 rounded-full bg-[#BC4800]"></span> Low Stock</span></td><td class="py-4 px-6 text-right"><div class="flex items-center justify-end gap-1.5"><button class="remove-btn w-8 h-8 rounded-lg border border-slate-200 hover:bg-red-50 hover:text-red-600 hover:border-red-200 text-slate-600 flex items-center justify-center transition-colors active:scale-95" title="Remove 1 unit"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><line x1="5" x2="19" y1="12" y2="12"></line></svg></button><button class="restock-btn h-8 px-2.5 rounded-lg border border-slate-200 hover:bg-orange-50 hover:text-[#BC4800] hover:border-orange-200 text-slate-700 text-xs font-semibold flex items-center gap-1 transition-colors active:scale-95"><svg class="w-3.5 h-3.5 text-[#BC4800]" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><line x1="12" x2="12" y1="5" y2="19"></line><line x1="5" x2="19" y1="12" y2="12"></line></svg><span class="">Restock</span></button><button class="edit-btn w-8 h-8 rounded-lg border border-slate-200 hover:bg-slate-100 text-slate-600 flex items-center justify-center transition-colors active:scale-95" title="Edit Gadget"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"></path></svg></button></div></td></tr><tr class="product-row hover:bg-slate-50/80 transition-colors" data-category="Smartphones" data-name="Samsung Galaxy S24 Ultra" data-sku="GAD-107" data-stock-level="in-stock"><td class="py-4 px-6"><div class="flex items-center gap-3"><img class="w-11 h-11 rounded-lg object-cover border border-slate-100 bg-slate-50 flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBttsFT80GfZryvf-X3bSNMnXnZChcFDuWS7m5DHWzOvqo9IYCRs7cDny0lYu9smdReLhJxRAvjgSBHQ7Jc-ZjPq7dBLFA-uid_WWJ0hucom1HbsAsRSxNvlXQPebz4d_jUkRQHnKY5sS105M8XTOCFl6XLyPnUbFd-vib0zqe6RZkvQOcYDnFQRkNSnd53D5j-sdwKKcQl-8FA3EXUhWl7HDG1qOyXN8KocCLEFNO8"><div class="min-w-0"><p class="text-sm font-semibold text-slate-900 truncate">Samsung Galaxy S24 Ultra</p><p class="text-xs text-slate-400 mt-0.5">SKU: <span class="text-slate-600 font-medium">GAD-107</span> • 512GB Titanium Black</p></div></div></td><td class="py-4 px-4"><span class="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-700 bg-slate-100 px-2.5 py-1 rounded-md"><svg class="w-3.5 h-3.5 text-slate-500" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><rect height="18" rx="2" width="12" x="6" y="3"></rect><line x1="11" x2="13" y1="18" y2="18"></line></svg> Smartphones</span></td><td class="py-4 px-4"><span class="text-sm font-bold text-slate-900">$1,299</span></td><td class="py-4 px-4"><span class="stock-display text-base font-bold text-slate-900" data-count="21">21</span><span class="text-slate-400 text-xs ml-1">units</span></td><td class="py-4 px-4"><span class="status-badge inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-semibold"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> In Stock</span></td><td class="py-4 px-6 text-right"><div class="flex items-center justify-end gap-1.5"><button class="remove-btn w-8 h-8 rounded-lg border border-slate-200 hover:bg-red-50 hover:text-red-600 hover:border-red-200 text-slate-600 flex items-center justify-center transition-colors active:scale-95" title="Remove 1 unit"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><line x1="5" x2="19" y1="12" y2="12"></line></svg></button><button class="restock-btn h-8 px-2.5 rounded-lg border border-slate-200 hover:bg-orange-50 hover:text-[#BC4800] hover:border-orange-200 text-slate-700 text-xs font-semibold flex items-center gap-1 transition-colors active:scale-95"><svg class="w-3.5 h-3.5 text-[#BC4800]" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><line x1="12" x2="12" y1="5" y2="19"></line><line x1="5" x2="19" y1="12" y2="12"></line></svg><span class="">Restock</span></button><button class="edit-btn w-8 h-8 rounded-lg border border-slate-200 hover:bg-slate-100 text-slate-600 flex items-center justify-center transition-colors active:scale-95" title="Edit Gadget"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"></path></svg></button></div></td></tr></tbody>
+</table>
+</div>
+</div>
+<!-- CARD GRID VIEW (Initially hidden, toggled by user) -->
+<div class="hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-space-md mb-space-lg" id="gridView">
+<!-- Card 1 -->
+<div class="gadget-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow" data-category="Smartphones" data-name="Apple iPhone 15 Pro Max" data-sku="GAD-101" data-stock-level="in-stock">
+<div>
+<div class="relative w-full h-44 rounded-lg bg-surface-container-low overflow-hidden mb-space-sm">
+<img class="w-full h-full object-cover" data-alt="Apple iPhone 15 Pro Max front and side titanium casing angled product render against clean studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1AFZ1YIn2n8ihVSBdV9b2q7Z3rbq5a2LdgY8QKyj9ggxyT71G-r70gEpf3f6TdunVAnEfFq7BL-0vWFgS6rQZWvDCtIGiYymJZE9xCuc9Xugqqq_HZLQW38uT63pPaTH-YuHU2rhRoSr6icaNJc4yd2KzitEmDpup7bw6ArBaKtVbnfO2cuBbbML43B6996fK0D3Prx3NQxON-NBocUP9y12-AiRQY9moFzg-ocVy">
+<span class="absolute top-2.5 right-2.5 px-space-sm py-1 rounded-full bg-secondary-fixed/90 backdrop-blur-sm text-secondary font-label-md text-label-md font-bold flex items-center gap-1 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> In Stock
+          </span>
+<span class="absolute bottom-2.5 left-2.5 px-2 py-0.5 rounded bg-surface-container-lowest/90 font-label-md text-label-md text-on-surface-variant font-semibold">
+            GAD-101
+          </span>
+</div>
+<p class="font-label-md text-label-md text-primary font-semibold mb-0.5">Smartphones</p>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-snug">Apple iPhone 15 Pro Max</h3>
+<p class="font-body-sm text-body-sm text-outline mt-0.5">256GB Titanium Edition</p>
+</div>
+<div class="mt-space-md pt-space-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Price</span>
+<p class="font-headline-md text-headline-md text-on-surface font-extrabold">$1,199</p>
+</div>
+<div class="text-right">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Available</span>
+<p class="font-counter-xl text-counter-xl text-secondary font-black"><span class="card-stock" data-count="42">42</span> <span class="font-body-sm text-body-sm font-normal text-outline">units</span></p>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-1.5 pt-1">
+<button class="card-remove h-10 rounded-lg bg-surface-container-low hover:bg-error-container hover:text-error text-on-surface-variant font-label-md text-label-md flex items-center justify-center gap-1 transition-colors active:scale-95">
+<span class="material-symbols-outlined text-base">remove</span> 1
+          </button>
+<button class="card-restock h-10 rounded-lg bg-surface-container-low hover:bg-secondary-fixed hover:text-on-secondary-fixed text-secondary font-label-md text-label-md flex items-center justify-center gap-1 transition-colors active:scale-95">
+<span class="material-symbols-outlined text-base">add</span> Restock
+          </button>
+<button class="card-edit h-10 rounded-lg bg-surface-container-low hover:bg-primary-container hover:text-on-primary text-on-surface-variant font-label-md text-label-md flex items-center justify-center transition-colors active:scale-95">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="gadget-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow" data-category="Gaming Gear" data-name="PlayStation 5 Digital Edition" data-sku="GAD-102" data-stock-level="low-stock">
+<div>
+<div class="relative w-full h-44 rounded-lg bg-surface-container-low overflow-hidden mb-space-sm">
+<img class="w-full h-full object-cover" data-alt="PlayStation 5 Digital Edition standing tall with dramatic contrast futuristic dual-tone white and black shell illuminated by cool ambient blue side LEDs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEL9ZJELeh6xZjeGr4g4ajLq8l0pF1LhjAFLw-PxAkDkAHi2eHRF1-R30anRp_rV21_glgYltcylnuIJeEtcE_9vvgl8xIj7sd1_X6qPjFpI9l9D5HoEZJEMmpF5XzDJFcjKluCQSo1gu0qSbzElri7vjBw52c_ysYzLAKhLOQ1GGY7R1fOYDCGrDw_mgGm2PEuBQ1BE1dKjI45w02av8c00V5WyLISB4jdmHLpzcV">
+<span class="absolute top-2.5 right-2.5 px-space-sm py-1 rounded-full bg-tertiary-fixed/90 backdrop-blur-sm text-tertiary font-label-md text-label-md font-bold flex items-center gap-1 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Low Stock
+          </span>
+<span class="absolute bottom-2.5 left-2.5 px-2 py-0.5 rounded bg-surface-container-lowest/90 font-label-md text-label-md text-on-surface-variant font-semibold">
+            GAD-102
+          </span>
+</div>
+<p class="font-label-md text-label-md text-primary font-semibold mb-0.5">Gaming Gear</p>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-snug">PlayStation 5 Digital Edition</h3>
+<p class="font-body-sm text-body-sm text-outline mt-0.5">1TB SSD Console</p>
+</div>
+<div class="mt-space-md pt-space-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Price</span>
+<p class="font-headline-md text-headline-md text-on-surface font-extrabold">$449</p>
+</div>
+<div class="text-right">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Available</span>
+<p class="font-counter-xl text-counter-xl text-tertiary font-black"><span class="card-stock" data-count="3">3</span> <span class="font-body-sm text-body-sm font-normal text-outline">units</span></p>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-1.5 pt-1">
+<button class="card-remove h-10 rounded-lg bg-surface-container-low hover:bg-error-container hover:text-error text-on-surface-variant font-label-md text-label-md flex items-center justify-center gap-1 transition-colors active:scale-95">
+<span class="material-symbols-outlined text-base">remove</span> 1
+          </button>
+<button class="card-restock h-10 rounded-lg bg-surface-container-low hover:bg-secondary-fixed hover:text-on-secondary-fixed text-secondary font-label-md text-label-md flex items-center justify-center gap-1 transition-colors active:scale-95">
+<span class="material-symbols-outlined text-base">add</span> Restock
+          </button>
+<button class="card-edit h-10 rounded-lg bg-surface-container-low hover:bg-primary-container hover:text-on-primary text-on-surface-variant font-label-md text-label-md flex items-center justify-center transition-colors active:scale-95">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="gadget-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow" data-category="Drones &amp; Cameras" data-name="DJI Mini 4 Pro Drone" data-sku="GAD-103" data-stock-level="in-stock">
+<div>
+<div class="relative w-full h-44 rounded-lg bg-surface-container-low overflow-hidden mb-space-sm">
+<img class="w-full h-full object-cover" data-alt="DJI Mini 4 Pro compact lightweight camera drone folded on a clean workspace with 4k gimbal camera prominent sharp clear studio product lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaALypA9EpdI3VqYVS7GP8XKMjrmRj2DcZFx4KxM_YKe0lZDSx05nyXaj-zMfNza4RHrhktZ0BqfhJWOyOjkvTxvyeO3m8i-j40oYd49pV5b9vuFC6nuBipuJtWkErqMH8NKhV8Cy1D2xmEd0iz0SFO-KjZi0f1o-Yn6AApSDWFmuw86gYn0jg2AU2bV4rrk-yAwAqt4aqD9ClML7WyG4yqaGQNbTiiJqWxb9BfPVb">
+<span class="absolute top-2.5 right-2.5 px-space-sm py-1 rounded-full bg-secondary-fixed/90 backdrop-blur-sm text-secondary font-label-md text-label-md font-bold flex items-center gap-1 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> In Stock
+          </span>
+<span class="absolute bottom-2.5 left-2.5 px-2 py-0.5 rounded bg-surface-container-lowest/90 font-label-md text-label-md text-on-surface-variant font-semibold">
+            GAD-103
+          </span>
+</div>
+<p class="font-label-md text-label-md text-primary font-semibold mb-0.5">Drones &amp; Cameras</p>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-snug">DJI Mini 4 Pro Drone</h3>
+<p class="font-body-sm text-body-sm text-outline mt-0.5">RC 2 Controller Pack</p>
+</div>
+<div class="mt-space-md pt-space-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Price</span>
+<p class="font-headline-md text-headline-md text-on-surface font-extrabold">$759</p>
+</div>
+<div class="text-right">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Available</span>
+<p class="font-counter-xl text-counter-xl text-secondary font-black"><span class="card-stock" data-count="14">14</span> <span class="font-body-sm text-body-sm font-normal text-outline">units</span></p>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-1.5 pt-1">
+<button class="card-remove h-10 rounded-lg bg-surface-container-low hover:bg-error-container hover:text-error text-on-surface-variant font-label-md text-label-md flex items-center justify-center gap-1 transition-colors active:scale-95">
+<span class="material-symbols-outlined text-base">remove</span> 1
+          </button>
+<button class="card-restock h-10 rounded-lg bg-surface-container-low hover:bg-secondary-fixed hover:text-on-secondary-fixed text-secondary font-label-md text-label-md flex items-center justify-center gap-1 transition-colors active:scale-95">
+<span class="material-symbols-outlined text-base">add</span> Restock
+          </button>
+<button class="card-edit h-10 rounded-lg bg-surface-container-low hover:bg-primary-container hover:text-on-primary text-on-surface-variant font-label-md text-label-md flex items-center justify-center transition-colors active:scale-95">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="gadget-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow" data-category="Audio &amp; Wearables" data-name="Bose QuietComfort Ultra" data-sku="GAD-104" data-stock-level="in-stock">
+<div>
+<div class="relative w-full h-44 rounded-lg bg-surface-container-low overflow-hidden mb-space-sm">
+<img class="w-full h-full object-cover" data-alt="Bose QuietComfort Ultra wireless noise cancelling headphones in matte black displayed on an elegant clean acrylic headset stand with subtle blue fill lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAw6VP03CCXoxFwtUmJB_yDMJUVTOiX-PzEe3Ra8pH-yWAUpRrsVecAy881v54-x-fSc46mtSwPWwdVi8bbxLwFesEoZtAtXgnQH_OVDEfKAkzuZAaF82EBjZ30T1_lPrxTWOkQMaH3l5PhscEAVBzuYrk-pdsQqXp_dOaQQR6oNh_Cj5LhZO2e46VE_1F7ho66zP4NHyzKPQCUbPJT8mHkGzvoLi40-oQU6H8kC83T">
+<span class="absolute top-2.5 right-2.5 px-space-sm py-1 rounded-full bg-secondary-fixed/90 backdrop-blur-sm text-secondary font-label-md text-label-md font-bold flex items-center gap-1 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> In Stock
+          </span>
+<span class="absolute bottom-2.5 left-2.5 px-2 py-0.5 rounded bg-surface-container-lowest/90 font-label-md text-label-md text-on-surface-variant font-semibold">
+            GAD-104
+          </span>
+</div>
+<p class="font-label-md text-label-md text-primary font-semibold mb-0.5">Audio &amp; Wearables</p>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-snug">Bose QuietComfort Ultra</h3>
+<p class="font-body-sm text-body-sm text-outline mt-0.5">Spatial Audio Over-Ear</p>
+</div>
+<div class="mt-space-md pt-space-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Price</span>
+<p class="font-headline-md text-headline-md text-on-surface font-extrabold">$379</p>
+</div>
+<div class="text-right">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Available</span>
+<p class="font-counter-xl text-counter-xl text-secondary font-black"><span class="card-stock" data-count="28">28</span> <span class="font-body-sm text-body-sm font-normal text-outline">units</span></p>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-1.5 pt-1">
+<button class="card-remove h-10 rounded-lg bg-surface-container-low hover:bg-error-container hover:text-error text-on-surface-variant font-label-md text-label-md flex items-center justify-center gap-1 transition-colors active:scale-95">
+<span class="material-symbols-outlined text-base">remove</span> 1
+          </button>
+<button class="card-restock h-10 rounded-lg bg-surface-container-low hover:bg-secondary-fixed hover:text-on-secondary-fixed text-secondary font-label-md text-label-md flex items-center justify-center gap-1 transition-colors active:scale-95">
+<span class="material-symbols-outlined text-base">add</span> Restock
+          </button>
+<button class="card-edit h-10 rounded-lg bg-surface-container-low hover:bg-primary-container hover:text-on-primary text-on-surface-variant font-label-md text-label-md flex items-center justify-center transition-colors active:scale-95">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Pagination Bar -->
+<div class="p-4 bg-white rounded-xl border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-[#BC4800]"></span><p class="text-xs text-slate-500">Showing <span class="font-semibold text-slate-800">1-7</span> of <span class="font-semibold text-slate-800">34</span> gadgets</p></div><div class="flex items-center gap-2"><button class="h-9 px-3 rounded-lg border border-slate-200 bg-white text-slate-400 text-xs font-semibold flex items-center gap-1 cursor-not-allowed opacity-60" disabled=""><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"></path></svg><span class="">Previous</span></button><div class="flex items-center gap-1"><button class="w-9 h-9 rounded-lg bg-[#BC4800] text-white text-xs font-semibold flex items-center justify-center shadow-sm">1</button><button class="w-9 h-9 rounded-lg border border-slate-200 bg-white hover:bg-slate-50 text-slate-700 text-xs font-semibold flex items-center justify-center transition-colors">2</button><button class="w-9 h-9 rounded-lg border border-slate-200 bg-white hover:bg-slate-50 text-slate-700 text-xs font-semibold flex items-center justify-center transition-colors">3</button><button class="w-9 h-9 rounded-lg border border-slate-200 bg-white hover:bg-slate-50 text-slate-700 text-xs font-semibold flex items-center justify-center transition-colors">4</button><button class="w-9 h-9 rounded-lg border border-slate-200 bg-white hover:bg-slate-50 text-slate-700 text-xs font-semibold flex items-center justify-center transition-colors">5</button></div><button class="h-9 px-3 rounded-lg border border-slate-200 bg-white hover:bg-slate-50 text-slate-700 text-xs font-semibold flex items-center gap-1 transition-colors"><span class="">Next</span><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"></path></svg></button></div></div>
+<!-- Interactive Add Gadget Modal Overlay -->
+<div class="fixed inset-0 z-50 bg-on-surface/40 backdrop-blur-sm flex items-center justify-center p-space-md hidden" id="addGadgetModal">
+<div class="bg-surface-container-lowest rounded-xl max-w-lg w-full p-space-lg shadow-xl relative animate-in fade-in zoom-in-95 duration-150">
+<div class="flex items-center justify-between pb-space-sm mb-space-md">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">Add New Gadget</h2>
+<p class="font-body-sm text-body-sm text-outline">Enter device specifications and baseline inventory stock</p>
+</div>
+<button class="w-9 h-9 rounded-lg hover:bg-surface-container-low text-on-surface-variant flex items-center justify-center" id="closeModalBtn">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+</div>
+<form class="flex flex-col gap-space-md" id="gadgetForm" onsubmit="event.preventDefault();">
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Gadget Title</label>
+<input class="w-full h-11 px-space-md rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest" placeholder="e.g. Meta Quest 3 128GB" required="" type="text">
+</div>
+<div class="grid grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Category</label>
+<select class="w-full h-11 px-space-sm rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none">
+<option>Smartphones</option>
+<option>Gaming Gear</option>
+<option>Audio &amp; Wearables</option>
+<option>Drones &amp; Cameras</option>
+</select>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Custom SKU</label>
+<input class="w-full h-11 px-space-md rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest" placeholder="GAD-108" required="" type="text">
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Initial Stock Units</label>
+<input class="w-full h-11 px-space-md rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest" min="1" required="" type="number" value="10">
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Retail Price ($)</label>
+<input class="w-full h-11 px-space-md rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest" min="1" required="" type="number" value="499">
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-sm mt-space-sm">
+<button class="h-11 px-space-lg rounded-lg bg-surface-container-low font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high transition-colors" id="cancelModalBtn" type="button">
+            Cancel
+          </button>
+<button class="h-11 px-6 rounded-xl bg-[#BC4800] hover:bg-[#943700] text-white font-medium text-sm shadow-sm transition-all" id="saveGadgetBtn" type="submit">
+            Save Gadget
+          </button>
+</div>
+</form>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    // View Switcher logic (Grid vs Table)
+    const viewGridBtn = document.getElementById('viewGridBtn');
+    const viewTableBtn = document.getElementById('viewTableBtn');
+    const tableView = document.getElementById('tableView');
+    const gridView = document.getElementById('gridView');
+
+    viewGridBtn.addEventListener('click', () => {
+      tableView.classList.add('hidden');
+      gridView.classList.remove('hidden');
+      viewGridBtn.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      viewGridBtn.classList.remove('text-on-surface-variant');
+      viewTableBtn.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      viewTableBtn.classList.add('text-on-surface-variant');
+    });
+
+    viewTableBtn.addEventListener('click', () => {
+      gridView.classList.add('hidden');
+      tableView.classList.remove('hidden');
+      viewTableBtn.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      viewTableBtn.classList.remove('text-on-surface-variant');
+      viewGridBtn.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      viewGridBtn.classList.add('text-on-surface-variant');
+    });
+
+    // Real-Time Filter & Search Handler
+    const searchInput = document.getElementById('searchInput');
+    const categoryFilter = document.getElementById('categoryFilter');
+    const stockFilter = document.getElementById('stockFilter');
+    const tableRows = document.querySelectorAll('.product-row');
+    const gadgetCards = document.querySelectorAll('.gadget-card');
+
+    function applyFilters() {
+      const query = searchInput.value.toLowerCase().trim();
+      const cat = categoryFilter.value;
+      const stock = stockFilter.value;
+
+      function checkMatch(elem) {
+        const name = elem.getAttribute('data-name').toLowerCase();
+        const sku = elem.getAttribute('data-sku').toLowerCase();
+        const itemCat = elem.getAttribute('data-category');
+        const itemStock = elem.getAttribute('data-stock-level');
+
+        const matchesSearch = name.includes(query) || sku.includes(query);
+        const matchesCategory = (cat === 'all' || itemCat === cat);
+        const matchesStock = (stock === 'all' || itemStock === stock);
+
+        return matchesSearch && matchesCategory && matchesStock;
+      }
+
+      tableRows.forEach(row => {
+        row.style.display = checkMatch(row) ? '' : 'none';
+      });
+
+      gadgetCards.forEach(card => {
+        card.style.display = checkMatch(card) ? '' : 'none';
+      });
+    }
+
+    searchInput.addEventListener('input', applyFilters);
+    categoryFilter.addEventListener('change', applyFilters);
+    stockFilter.addEventListener('change', applyFilters);
+
+    // Interactive Quantity Incrementor & Decrementor for rows and cards
+    function updateStockBadge(parentRow, newCount) {
+      const badge = parentRow.querySelector('.status-badge');
+      if (badge) {
+        if (newCount <= 5) {
+          parentRow.setAttribute('data-stock-level', 'low-stock');
+          badge.className = 'status-badge inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-tertiary-fixed/60 text-tertiary font-label-md text-label-md font-bold';
+          badge.innerHTML = '<span class="w-2 h-2 rounded-full bg-tertiary"></span> Low Stock';
+        } else {
+          parentRow.setAttribute('data-stock-level', 'in-stock');
+          badge.className = 'status-badge inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-secondary-fixed/30 text-secondary font-label-md text-label-md font-bold';
+          badge.innerHTML = '<span class="w-2 h-2 rounded-full bg-secondary"></span> In Stock';
+        }
+      }
+    }
+
+    // Table Actions
+    document.querySelectorAll('.product-row').forEach(row => {
+      const stockNum = row.querySelector('.stock-display');
+      const restockBtn = row.querySelector('.restock-btn');
+      const removeBtn = row.querySelector('.remove-btn');
+      const editBtn = row.querySelector('.edit-btn');
+
+      restockBtn.addEventListener('click', () => {
+        let current = parseInt(stockNum.getAttribute('data-count'), 10);
+        current += 5;
+        stockNum.setAttribute('data-count', current);
+        stockNum.textContent = current;
+        if (current > 5) stockNum.className = 'stock-display font-counter-xl text-counter-xl text-on-surface';
+        updateStockBadge(row, current);
+      });
+
+      removeBtn.addEventListener('click', () => {
+        let current = parseInt(stockNum.getAttribute('data-count'), 10);
+        if (current > 0) {
+          current -= 1;
+          stockNum.setAttribute('data-count', current);
+          stockNum.textContent = current;
+          if (current <= 5) stockNum.className = 'stock-display font-counter-xl text-counter-xl text-tertiary';
+          updateStockBadge(row, current);
+        }
+      });
+
+      editBtn.addEventListener('click', () => {
+        const modal = document.getElementById('addGadgetModal');
+        modal.classList.remove('hidden');
+      });
+    });
+
+    // Card Actions
+    document.querySelectorAll('.gadget-card').forEach(card => {
+      const stockNum = card.querySelector('.card-stock');
+      const restockBtn = card.querySelector('.card-restock');
+      const removeBtn = card.querySelector('.card-remove');
+      const editBtn = card.querySelector('.card-edit');
+
+      restockBtn.addEventListener('click', () => {
+        let current = parseInt(stockNum.getAttribute('data-count'), 10);
+        current += 5;
+        stockNum.setAttribute('data-count', current);
+        stockNum.textContent = current;
+      });
+
+      removeBtn.addEventListener('click', () => {
+        let current = parseInt(stockNum.getAttribute('data-count'), 10);
+        if (current > 0) {
+          current -= 1;
+          stockNum.setAttribute('data-count', current);
+          stockNum.textContent = current;
+        }
+      });
+
+      editBtn.addEventListener('click', () => {
+        const modal = document.getElementById('addGadgetModal');
+        modal.classList.remove('hidden');
+      });
+    });
+
+    // Modal behavior
+    const addBtn = document.getElementById('add-gadget-btn');
+    const modal = document.getElementById('addGadgetModal');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+    const cancelModalBtn = document.getElementById('cancelModalBtn');
+    const saveBtn = document.getElementById('saveGadgetBtn');
+
+    function openModal() { modal.classList.remove('hidden'); }
+    function closeModal() { modal.classList.add('hidden'); }
+
+    addBtn.addEventListener('click', openModal);
+    closeModalBtn.addEventListener('click', closeModal);
+    cancelModalBtn.addEventListener('click', closeModal);
+    saveBtn.addEventListener('click', () => {
+      closeModal();
+    });
+  })();
+</script></main></div>
+
+</body></html>
