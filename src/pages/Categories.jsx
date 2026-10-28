@@ -46,7 +46,7 @@ export default function Categories() {
           </p>
         </div>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 w-full sm:w-auto">
           <div className="relative hidden sm:block">
             <span className="material-symbols-outlined text-base absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">
               filter_list
@@ -62,7 +62,7 @@ export default function Categories() {
 
           <button
             onClick={() => setIsCategoryModalOpen(true)}
-            className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#bc4800] hover:bg-[#943700] text-white font-semibold text-sm transition-all shadow-sm active:scale-95 cursor-pointer"
+            className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-[#bc4800] hover:bg-[#943700] text-white font-semibold text-sm transition-all shadow-sm active:scale-95 cursor-pointer w-full sm:w-auto"
           >
             <span className="material-symbols-outlined text-lg">add</span>
             <span>Create Category</span>

@@ -59,10 +59,10 @@ export default function Products() {
           </div>
         </div>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 w-full sm:w-auto">
           <button
             onClick={() => setIsQuickAddOpen(true)}
-            className="h-11 px-5 rounded-xl bg-[#bc4800] hover:bg-[#943700] text-white text-sm font-semibold flex items-center gap-2 shadow-sm transition-all active:scale-95 cursor-pointer"
+            className="h-11 px-5 rounded-xl bg-[#bc4800] hover:bg-[#943700] text-white text-sm font-semibold flex items-center justify-center gap-2 shadow-sm transition-all active:scale-95 cursor-pointer w-full sm:w-auto"
           >
             <span className="material-symbols-outlined text-lg">add_circle</span>
             <span>Add New Gadget</span>

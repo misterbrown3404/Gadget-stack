@@ -40,17 +40,17 @@ export default function Dashboard() {
             Here is your gadget stash overview today. Everything is ready.
           </p>
         </div>
-        <div className="flex items-center gap-3 w-full md:w-auto">
+        <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full md:w-auto">
           <button
             onClick={() => setIsQuickAddOpen(true)}
-            className="h-11 px-5 rounded-xl bg-[#bc4800] hover:bg-[#943700] text-white text-sm font-semibold flex items-center justify-center gap-2 transition-all shadow-sm active:scale-95 cursor-pointer"
+            className="h-11 px-5 rounded-xl bg-[#bc4800] hover:bg-[#943700] text-white text-sm font-semibold flex items-center justify-center gap-2 transition-all shadow-sm active:scale-95 cursor-pointer w-full sm:w-auto"
           >
             <span className="material-symbols-outlined text-lg">add_circle</span>
             <span>Add Gadget</span>
           </button>
           <button
             onClick={() => alert('Barcode Scanner ready! Connect camera or USB scanner.')}
-            className="h-11 px-4 rounded-xl border border-slate-200 hover:bg-slate-50 text-slate-700 text-sm font-semibold flex items-center justify-center gap-2 transition-all active:scale-95 cursor-pointer"
+            className="h-11 px-4 rounded-xl border border-slate-200 hover:bg-slate-50 text-slate-700 text-sm font-semibold flex items-center justify-center gap-2 transition-all active:scale-95 cursor-pointer w-full sm:w-auto"
           >
             <span className="material-symbols-outlined text-lg text-slate-600">qr_code_scanner</span>
             <span>Scan Barcode</span>

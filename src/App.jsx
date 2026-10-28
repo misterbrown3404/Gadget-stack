@@ -18,13 +18,13 @@ export default function App() {
 
   return (
     <div className="bg-[#f8f9ff] min-h-screen text-[#0b1c30]">
-      {/* Persistent Navigation */}
+      {/* Responsive Navigation Rail & Drawer */}
       <Sidebar />
 
       {/* Main Content Area */}
-      <div className="pl-64">
+      <div className="pl-0 lg:pl-64 transition-all duration-300">
         <Header />
-        <main className="w-full pt-20 px-8 py-6 min-h-screen">
+        <main className="w-full pt-20 px-4 sm:px-6 lg:px-8 py-6 min-h-screen">
           {currentPage === 'dashboard' && <Dashboard />}
           {currentPage === 'products' && <Products />}
           {currentPage === 'categories' && <Categories />}
